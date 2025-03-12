@@ -1,3 +1,47 @@
 test.class
 test.java
 .DS_Store
+
+# Node.js
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# Vite
+.vite/
+.vitepress/cache/
+
+# Editor/IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# MacOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Otros
+*.log
+

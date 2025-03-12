@@ -22,14 +22,17 @@ function AlbumList() {
   if (error) return <p className="text-red-500 text-center">{error}</p>;
 
   return (
-    <div className="p-4 rounded-xl shadow-xl">
+    <div className="p-4 rounded-xl shadow-xl h-96 overflow-y-scroll">
       <h2 className="text-xl font-bold mb-2">Lista de Álbumes</h2>
       <ul className="space-y-2">
         {albums.map((album) => (
-          <li key={album.id} className="p-2 border rounded-lg bg-[#cbc5ad]">
-
+          <li key={album.id} className="p-2 border rounded-lg bg-[#cbc5ad] ">
             <p className="text-gray-700 font-semibold">Usuario: {album.id}</p>
-            <p className="text-gray-600">ID: {album.userId}</p>
+            <img
+              src={`https://via.placeholder.com/150?text=Album+${album.id}`}
+              alt="Album Cover"
+              className="w-full h-32 object-cover rounded"
+            />
             <p className="text-gray-600">Título: {album.title}</p>
           </li>
         ))}

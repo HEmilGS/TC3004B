@@ -1,0 +1,11 @@
+# Version de docker compose
+version: "3"
+#define los diferentes servicios de la aplicacion
+services:
+#servicios
+  mi-web-basica:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8700:80"
